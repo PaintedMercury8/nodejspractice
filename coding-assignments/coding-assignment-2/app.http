@@ -1,0 +1,67 @@
+//Api 1//
+//Scenario 1//
+
+POST http://localhost:3000/register/
+Content-Type: application/json
+
+{
+  "username": "adam_richard",
+  "password": "richard_567",
+  "name": "Adam Richard",
+  "gender": "male"
+}
+
+###
+//Api 2//
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+  "username":"JoeBiden",
+  "password":"biden@123"
+}
+
+###
+//Api 3//
+GET http://localhost:3000/user/tweets/feed
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJpYXQiOjE2OTIwMDU5MDF9.bpJfhIku-NfhhitfgK0dNuomZfmRhaarp9fVPjOIazU
+
+###
+
+//Api 4//
+GET http://localhost:3000/user/following/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJpYXQiOjE2OTIwMDU5MDF9.bpJfhIku-NfhhitfgK0dNuomZfmRhaarp9fVPjOIazU
+
+###
+//Api 5//
+GET http://localhost:3000/user/followers/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJpYXQiOjE2OTIwMDU5MDF9.bpJfhIku-NfhhitfgK0dNuomZfmRhaarp9fVPjOIazU
+
+###
+//Api 6//
+GET http://localhost:3000/tweets/2/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJpYXQiOjE2OTIwMDU5MDF9.bpJfhIku-NfhhitfgK0dNuomZfmRhaarp9fVPjOIazU
+###
+//Api 7//
+GET http://localhost:3000/tweets/1/likes/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJpYXQiOjE2OTIwMDU5MDF9.bpJfhIku-NfhhitfgK0dNuomZfmRhaarp9fVPjOIazU
+###
+//Api 8//
+GET http://localhost:3000/tweets/2/replies/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJpYXQiOjE2OTIwMDU5MDF9.bpJfhIku-NfhhitfgK0dNuomZfmRhaarp9fVPjOIazU
+###
+//Api 9//
+GET http://localhost:3000/user/tweets/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJpYXQiOjE2OTIwMDU5MDF9.bpJfhIku-NfhhitfgK0dNuomZfmRhaarp9fVPjOIazU
+###
+//Api 10//
+POST http://localhost:3000/user/tweets/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJpYXQiOjE2OTIwMDU5MDF9.bpJfhIku-NfhhitfgK0dNuomZfmRhaarp9fVPjOIazU
+Content-Type: application/json
+
+{
+    "tweet":"The mornings are the best"
+}
+###
+DELETE http://localhost:3000/tweets/16/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJpYXQiOjE2OTIwMDU5MDF9.bpJfhIku-NfhhitfgK0dNuomZfmRhaarp9fVPjOIazU

@@ -1,12 +1,8 @@
-exports.studentDetails = class StudentDetails {
-  constructor(name, age) {
-    this.name = name;
-    this.age = age;
-  }
+const userName = "alex";
+
+const validateUser = (loggedUser) => {
+  let result = userName === loggedUser ? "Welcome!" : "Invalid User Name";
+  return result;
 };
-exports.carDetails = class CarDetails {
-  constructor(name, age) {
-    this.name = name;
-    this.age = age;
-  }
-};
+
+export default validateUser;
